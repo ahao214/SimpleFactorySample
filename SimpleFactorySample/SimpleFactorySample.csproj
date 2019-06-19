@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChartFactory.cs" />
     <Compile Include="HistogramChart.cs" />
     <Compile Include="IChart.cs" />
     <Compile Include="LineChart.cs" />
