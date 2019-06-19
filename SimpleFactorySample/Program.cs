@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Configuration;
 
 namespace SimpleFactorySample
 {
@@ -10,6 +7,13 @@ namespace SimpleFactorySample
     {
         static void Main(string[] args)
         {
+            IChart chart;
+            //读取配置文件
+            string chartStr = ConfigurationManager.AppSettings["chartType"];
+            chart = ChartFactory.GetChart(chartStr);    //通过静态工厂方法创建产品
+            chart.Display();
+
+            Console.ReadLine();
         }
     }
 }
