@@ -41,6 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HistogramChart.cs" />
+    <Compile Include="IChart.cs" />
+    <Compile Include="LineChart.cs" />
+    <Compile Include="PieChart.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
